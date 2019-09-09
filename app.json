@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Iwansell",
+    "slug": "IwansellMobile",
+    "privacy": "public",
+    "sdkVersion": "33.0.0",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iwansell.iwansell"
+    },
+    "android": {
+      "package": "com.merlinsbeardlab.iwansell",
+      "versionCode": 3
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon1.png",
+    "splash": {
+      "image": "./assets/images/icon1.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": "",
+    "extra": {
+      "bugsnag": {
+        "apiKey": "897e96862ec0f07a4638d9de9e12dd3a"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
